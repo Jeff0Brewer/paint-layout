@@ -3,6 +3,7 @@
     z-index: 1;
     width: 100vw;
     height: var(--vh);
+    padding: min(calc(100px + 15vw), 30vh) max(calc((100vw - var(--content-max))/2), 5vw);
 }
 
 .graphic {
