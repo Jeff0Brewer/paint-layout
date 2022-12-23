@@ -12,10 +12,15 @@ export default function Home () {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main>
-                <div>
-                </div>
-            </main>
+            <section className={styles.landing}>
+                <Image
+                    className={styles.graphic}
+                    src="/landing-flow.jpg"
+                    alt="Colorful paint graphic"
+                    fill={true}
+                    priority={true}
+                />
+            </section>
         </>
     )
 }
