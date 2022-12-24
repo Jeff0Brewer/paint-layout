@@ -1,0 +1,36 @@
+.swatchDisplay {
+    position: relative;
+}
+
+.swatches {
+    display: flex;
+    justify-content: space-between;
+}
+
+.swatch {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-basis: 8%;
+    height: 30px;
+    border-radius: 3px;
+    transition: opacity 1s;
+}
+
+.display {
+    position: absolute;
+    margin: 15px 0;
+    height: calc(2 * var(--swatch-max));
+    width: 100%;
+}
+
+.display > * {
+    object-fit: contain;
+    object-position: top;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.display > .selected {
+    opacity: 1;
+}

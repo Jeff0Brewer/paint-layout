@@ -2,6 +2,7 @@
 
 :root {
     --content-max: 1300px;
+    --swatch-max: 300px;
     --vh: 100vh;
 }
 
@@ -12,4 +13,8 @@
 
 body, html, p, h1 {
     margin: 0;
+}
+
+a, button {
+    cursor: pointer;
 }
