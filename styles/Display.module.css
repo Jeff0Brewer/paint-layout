@@ -1,0 +1,68 @@
+.display {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.bg .fade {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 1) 30%);
+}
+
+.bg img {
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.img, .text {
+    z-index: 3;
+}
+
+.img {
+    position: relative;
+    width: 90vw;
+    height: 90vw;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.img * {
+    object-fit: contain;
+}
+
+.text {
+    max-width: 400px;
+    padding: 20px;
+}
+
+.text * {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .5px;
+    color: #888;
+}

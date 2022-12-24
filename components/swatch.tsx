@@ -12,6 +12,7 @@ const Swatch = (props: SwatchProps) => {
                 opacity: props.opacity
             }}
             onMouseEnter={props.setUrl}
+            onMouseDown={props.setSwatch}
         ></a>
     )
 }
@@ -33,6 +34,7 @@ const Swatches = (props: SwatchesProps) => {
                             opacity={(selectUrl && selectUrl !== sp.url) ? 0.3 : 1}
                             url={sp.url}
                             setUrl={() => setSelectUrl(sp.url)}
+                            setSwatch={() => props.setSwatch(sp)}
                         />
                 )
             }</span>

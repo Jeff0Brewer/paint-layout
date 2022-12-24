@@ -1,5 +1,6 @@
 .swatchDisplay {
     position: relative;
+    z-index: 3;
 }
 
 .swatches {
@@ -21,10 +22,12 @@
     position: absolute;
     margin: 15px 0;
     height: 800px;
+    background-color: #f0f;
     width: 100%;
 }
 
 .display > * {
+    position: relative;
     object-fit: contain;
     object-position: top;
     opacity: 0;
