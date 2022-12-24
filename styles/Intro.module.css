@@ -1,0 +1,28 @@
+.intro {
+    position: relative;
+    z-index: 2;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .8) 0%, rgba(255, 255, 255, .1) 100%);
+}
+
+.intro > * {
+    margin-bottom: 8px;
+}
+
+.intro > h1 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.intro > p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #888;
+}
