@@ -2,8 +2,6 @@
 
 :root {
     --content-max: 1300px;
-    --swatch-max: 300px;
-    --vh: 100vh;
 }
 
 * {

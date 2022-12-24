@@ -2,10 +2,30 @@
     position: relative;
     z-index: 1;
     width: 100vw;
-    height: var(--vh);
+    height: 110vh;
     padding: min(calc(100px + 15vw), 30vh) max(calc((100vw - var(--content-max))/2), 5vw);
 }
 
 .graphic {
     object-fit: cover;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 77px;
+}
+
+.wave .shapeFill {
+    fill: #FFFFFF;
 }

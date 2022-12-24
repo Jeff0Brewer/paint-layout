@@ -20,7 +20,7 @@
 .display {
     position: absolute;
     margin: 15px 0;
-    height: calc(2 * var(--swatch-max));
+    height: 800px;
     width: 100%;
 }
 
